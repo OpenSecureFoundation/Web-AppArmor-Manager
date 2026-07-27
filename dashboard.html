@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+<title>Dashboard - AppArmor Guardian</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<style>
+
+*{
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+
+body{
+
+    margin:0;
+    background:#0f172a;
+    color:#e5e7eb;
+
+}
+
+
+/* HEADER */
+
+header{
+
+    background:#020617;
+    padding:1rem 2rem;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    border-bottom:1px solid #1e293b;
+
+}
+
+
+header h1{
+
+    color:#22c55e;
+
+}
+
+
+nav a{
+
+    margin-left:20px;
+
+    color:#cbd5f5;
+
+    text-decoration:none;
+
+}
+
+
+nav a:hover{
+
+    color:#22c55e;
+
+}
+
+
+
+/* HERO */
+
+
+.hero{
+
+    padding:3rem 2rem;
+
+    background:
+    linear-gradient(
+    135deg,
+    #020617,
+    #052e16
+    );
+
+}
+
+
+.hero h2{
+
+    font-size:2rem;
+
+}
+
+
+.hero p{
+
+    color:#94a3b8;
+
+    max-width:700px;
+
+}
+
+
+
+
+/* CARTES */
+
+
+.cards{
+
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(240px,1fr));
+
+
+    gap:1.5rem;
+
+    padding:2rem;
+
+}
+
+
+
+.card{
+
+
+    background:#020617;
+
+    border-radius:15px;
+
+    padding:1.5rem;
+
+
+    border:
+    1px solid #1e293b;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.card:hover{
+
+    transform:translateY(-5px);
+
+    border-color:#22c55e;
+
+}
+
+
+
+.card h3{
+
+    color:#22c55e;
+
+}
+
+
+
+/* SECTIONS */
+
+
+.section{
+
+
+    padding:2rem;
+
+}
+
+
+
+.box{
+
+
+    background:#020617;
+
+    border-radius:15px;
+
+    padding:1.5rem;
+
+    border:1px solid #1e293b;
+
+
+}
+
+
+
+/* BOUTONS */
+
+
+button{
+
+
+    background:#22c55e;
+
+    border:none;
+
+    color:#020617;
+
+    padding:10px 15px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    margin:5px;
+
+    font-weight:bold;
+
+}
+
+
+
+button:hover{
+
+    opacity:.8;
+
+}
+
+
+
+
+/* TABLE */
+
+
+table{
+
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+
+
+th,td{
+
+
+    padding:12px;
+
+    border-bottom:1px solid #1e293b;
+
+    text-align:left;
+
+
+}
+
+
+th{
+
+    color:#22c55e;
+
+}
+
+
+
+.danger{
+
+    color:#ef4444;
+
+}
+
+
+
+.warning{
+
+    color:#facc15;
+
+}
+
+
+
+.success{
+
+    color:#22c55e;
+
+}
+
+
+
+
+
+footer{
+
+
+    text-align:center;
+
+    padding:1rem;
+
+    color:#64748b;
+
+}
+
+
+
+</style>
+
+</head>
+
+
+
+<body>
+
+
+
+<header>
+
+
+<h1>
+AppArmor
+</h1>
+
+
+<nav>
+
+<a href="#">
+Dashboard
+</a>
+
+<a href="#">
+Profils
+</a>
+
+
+<a href="#">
+Logs
+</a>
+
+
+<a href="#">
+Alertes
+</a>
+
+
+<a href="/">
+Déconnexion
+</a>
+
+
+</nav>
+
+
+</header>
+
+
+
+
+<section class="hero">
+
+
+<h2>
+Gestion intelligente de la sécurité AppArmor
+</h2>
+
+
+<p>
+
+Surveillance des profils AppArmor,
+contrôle des permissions,
+analyse des violations et mitigation des comportements suspects.
+
+</p>
+
+
+</section>
+
+
+
+
+
+<!-- STATISTIQUES -->
+
+<section class="cards">
+
+
+<div class="card">
+
+<h3>
+🟢 Etat AppArmor
+</h3>
+
+<p>
+Service actif
+</p>
+
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>
+📄 Profils actifs
+</h3>
+
+<p>
+35 profils chargés
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>
+🚨 Violations
+</h3>
+
+<p class="danger">
+
+24 tentatives bloquées
+
+</p>
+
+
+</div>
+
+
+
+
+
+</section>
+
+
+
+
+
+
+<!-- GESTION PROFILS -->
+
+<section class="section">
+
+
+<h2>
+📁 Gestion des profils AppArmor
+</h2>
+
+
+<div class="box">
+
+
+<button>
+➕ Créer profil
+</button>
+
+
+<button>
+✏ Modifier
+</button>
+
+
+<button>
+🗑 Supprimer
+</button>
+
+
+<button>
+▶ Activer
+</button>
+
+
+<button>
+⏸ Désactiver
+</button>
+
+
+<br><br>
+
+
+<h3>
+Changer le mode du profil
+</h3>
+
+
+<button>
+Enforce
+</button>
+
+
+<button>
+Complain
+</button>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- LOGS -->
+
+
+<section class="section">
+
+
+<h2>
+📜 Logs AppArmor en temps réel
+</h2>
+
+
+
+<div class="box">
+
+
+<table>
+
+
+<tr>
+
+<th>
+Date
+</th>
+
+
+<th>
+Application
+</th>
+
+
+<th>
+Action
+</th>
+
+
+<th>
+Ressource
+</th>
+
+
+<th>
+Statut
+</th>
+
+
+</tr>
+
+
+
+<tr>
+
+
+<td>
+09/07/2026 19:20
+</td>
+
+
+<td>
+Firefox
+</td>
+
+
+<td>
+Lecture fichier
+</td>
+
+
+<td>
+/etc/shadow
+</td>
+
+
+<td class="danger">
+DENIED
+</td>
+
+
+
+</tr>
+
+
+
+<tr>
+
+
+<td>
+09/07/2026 19:22
+</td>
+
+
+<td>
+Apache
+</td>
+
+
+<td>
+Accès réseau
+</td>
+
+
+<td>
+Port 8080
+</td>
+
+
+<td class="warning">
+SURVEILLÉ
+</td>
+
+
+</tr>
+
+
+
+</table>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- TENTATIVES ACCES -->
+
+
+<section class="section">
+
+
+<h2>
+🚨 Tentatives d'accès détectées
+</h2>
+
+
+
+<div class="box">
+
+
+<table>
+
+
+<tr>
+
+<th>
+Processus
+</th>
+
+<th>
+Tentative
+</th>
+
+<th>
+Décision AppArmor
+</th>
+
+
+</tr>
+
+
+
+
+<tr>
+
+
+<td>
+/bin/bash
+</td>
+
+
+<td>
+Accès non autorisé à /etc/passwd
+</td>
+
+
+<td class="danger">
+Bloqué
+</td>
+
+
+</tr>
+
+
+
+
+<tr>
+
+
+<td>
+python3
+</td>
+
+
+<td>
+Modification profil système
+</td>
+
+
+<td class="danger">
+Bloqué
+</td>
+
+
+</tr>
+
+
+
+</table>
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+<footer>
+
+AppArmor © 2026 - Security Monitoring Platform
+
+</footer>
+
+
+
+</body>
+
+</html>
