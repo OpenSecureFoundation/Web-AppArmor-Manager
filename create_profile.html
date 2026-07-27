@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 24.2.7.2 (Linux)"/>
+	<meta name="created" content="2026-07-27T10:56:38.475272804"/>
+	<meta name="changed" content="2026-07-27T10:57:16.963330813"/>
+	<style type="text/css">
+		@page { size: 21cm 29.7cm; margin: 2cm }
+		p { line-height: 115%; margin-bottom: 0.25cm; background: transparent }
+	</style>
+</head>
+<body lang="fr-FR" link="#000080" vlink="#800000" dir="ltr"><p style="line-height: 100%; margin-bottom: 0cm">
+&lt;!DOCTYPE html&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;html lang=&quot;fr&quot;&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;head&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;meta
+charset=&quot;UTF-8&quot;&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;title&gt;Créer
+un profil AppArmor&lt;/title&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;style&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">body{</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">background:#0f172a;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">color:white;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">font-family:'Segoe
+UI';</p>
+<p style="line-height: 100%; margin-bottom: 0cm">padding:40px;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">}</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">.container{</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">background:#020617;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">width:600px;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">padding:30px;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">border-radius:15px;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">}</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">input,select,textarea{</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">width:100%;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">padding:12px;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">margin:10px 0;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">border-radius:8px;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">}</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">button{</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">background:#22c55e;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">border:none;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">padding:12px 20px;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">border-radius:8px;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">font-weight:bold;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">cursor:pointer;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">}</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">h1{</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">color:#22c55e;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">}</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;/style&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;/head&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;body&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;div
+class=&quot;container&quot;&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;h1&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">🛡 Création d'un
+profil AppArmor</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;/h1&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;form
+method=&quot;POST&quot;&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;label&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">Nom du profil</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;/label&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;input 
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">type=&quot;text&quot;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">name=&quot;profile_name&quot;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">placeholder=&quot;ex:
+firefox_profile&quot;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">required&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;label&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">Application
+concernée</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;/label&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;input</p>
+<p style="line-height: 100%; margin-bottom: 0cm">type=&quot;text&quot;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">name=&quot;application&quot;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">placeholder=&quot;Firefox,
+Apache, Python...&quot;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">required&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;label&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">Chemin de
+l'exécutable</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;/label&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;input</p>
+<p style="line-height: 100%; margin-bottom: 0cm">type=&quot;text&quot;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">name=&quot;executable&quot;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">placeholder=&quot;/usr/bin/firefox&quot;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">required&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;label&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">Mode de protection</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;/label&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;select
+name=&quot;mode&quot;&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;option
+value=&quot;enforce&quot;&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">Enforce (blocage
+actif)</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;/option&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;option
+value=&quot;complain&quot;&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">Complain (audit
+seulement)</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;/option&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;/select&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;label&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">Règles d'accès</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;/label&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;textarea</p>
+<p style="line-height: 100%; margin-bottom: 0cm">name=&quot;rules&quot;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">rows=&quot;8&quot;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">placeholder=&quot;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">Exemple :</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">/etc/passwd r,</p>
+<p style="line-height: 100%; margin-bottom: 0cm">/tmp/** rw,</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&quot;&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;/textarea&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;button
+type=&quot;submit&quot;&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">Créer le profil</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;/button&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;/form&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;p&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">{{message}}</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;/p&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;br&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;a
+href=&quot;/dashboard&quot;&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">Retour Dashboard</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;/a&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;/div&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;/body&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;/html&gt;</p>
+</body>
+</html>
