@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 24.2.7.2 (Linux)"/>
+	<meta name="created" content="2026-07-27T10:57:58.311156839"/>
+	<meta name="changed" content="2026-07-27T10:58:20.947806085"/>
+	<style type="text/css">
+		@page { size: 21cm 29.7cm; margin: 2cm }
+		p { line-height: 115%; margin-bottom: 0.25cm; background: transparent }
+	</style>
+</head>
+<body lang="fr-FR" link="#000080" vlink="#800000" dir="ltr"><p style="line-height: 100%; margin-bottom: 0cm">
+&lt;!DOCTYPE html&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;html lang=&quot;fr&quot;&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;head&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;meta
+charset=&quot;UTF-8&quot;&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;title&gt;Profils
+AppArmor&lt;/title&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;style&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">button{</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">   
+background:#22c55e;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">    border:none;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">    padding:8px
+12px;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">   
+border-radius:8px;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">    cursor:pointer;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">   
+font-weight:bold;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">}</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">button:hover{</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">    opacity:0.8;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">}</p>
+<p style="line-height: 100%; margin-bottom: 0cm">body{</p>
+<p style="line-height: 100%; margin-bottom: 0cm">   
+background:#0f172a;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">    color:white;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">   
+font-family:Segoe UI;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">    padding:30px;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">}</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">table{</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">    width:100%;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">   
+border-collapse:collapse;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">   
+background:#020617;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">}</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">th,td{</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">    padding:15px;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">   
+border-bottom:1px solid #334155;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">}</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">th{</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">    color:#22c55e;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">}</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">.enforce{</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">    color:#22c55e;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">}</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">.complain{</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">    color:#facc15;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">}</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;/style&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;/head&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;body&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;h1&gt;🛡
+Profils AppArmor actifs&lt;/h1&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;table&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;tr&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;th&gt;Nom du
+profil&lt;/th&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;th&gt;Mode&lt;/th&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;th&gt;Actions&lt;/th&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;/tr&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">{% for profil in
+profils %}</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;tr&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;td&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">{{ profil.nom }}</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;/td&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;tr&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">    &lt;th&gt;Nom du
+profil&lt;/th&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">    &lt;th&gt;Mode&lt;/th&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">    &lt;th&gt;Actions&lt;/th&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;/tr&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">{% for profil in
+profils %}</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;tr&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">    &lt;td&gt;{{
+profil.nom }}&lt;/td&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">    &lt;td&gt;{{
+profil.mode }}&lt;/td&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">    &lt;td&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">        &lt;form
+action=&quot;/set-enforce&quot; method=&quot;POST&quot;
+style=&quot;display:inline;&quot;&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">            &lt;input
+type=&quot;hidden&quot; name=&quot;profil&quot; value=&quot;{{
+profil.nom }}&quot;&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">            &lt;button
+type=&quot;submit&quot;&gt;Enforce&lt;/button&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">        &lt;/form&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">        &lt;form
+action=&quot;/set-complain&quot; method=&quot;POST&quot;
+style=&quot;display:inline;&quot;&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">            &lt;input
+type=&quot;hidden&quot; name=&quot;profil&quot; value=&quot;{{
+profil.nom }}&quot;&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">            &lt;button
+type=&quot;submit&quot;&gt;Complain&lt;/button&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">        &lt;/form&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">    &lt;/td&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"> &lt;td&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">        &lt;form
+action=&quot;/activate-profile&quot; method=&quot;POST&quot;
+style=&quot;display:inline;&quot;&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">            &lt;input
+type=&quot;hidden&quot; name=&quot;profil&quot; value=&quot;{{
+profil.chemin }}&quot;&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">            &lt;button
+type=&quot;submit&quot;&gt;▶ Activer&lt;/button&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">        &lt;/form&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">        &lt;form
+action=&quot;/deactivate-profile&quot; method=&quot;POST&quot;
+style=&quot;display:inline;&quot;&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">    &lt;input
+type=&quot;hidden&quot; 
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">          
+name=&quot;profil&quot; 
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">           value=&quot;{{
+profil.chemin }}&quot;&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">    &lt;button
+type=&quot;submit&quot;&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">        ⏸
+Désactiver</p>
+<p style="line-height: 100%; margin-bottom: 0cm">    &lt;/button&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;form
+action=&quot;/edit-profile/{{ profil.nom }}&quot; method=&quot;GET&quot;&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"> &lt;button
+type=&quot;submit&quot;&gt;✏ Modifier&lt;/button&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;/form&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;form
+action=&quot;/delete-profile&quot; method=&quot;POST&quot;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">     
+style=&quot;display:inline;&quot;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">     
+onsubmit=&quot;return confirm('Voulez-vous vraiment supprimer ce
+profil ?');&quot;&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">    &lt;input
+type=&quot;hidden&quot;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">          
+name=&quot;profil&quot;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">           value=&quot;{{
+profil.chemin }}&quot;&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">    &lt;button
+type=&quot;submit&quot;&gt;🗑 Supprimer&lt;/button&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;/form&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;/form&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;/tr&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">{% endfor %}</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;td&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">{% if profil.mode ==
+&quot;enforce&quot; %}</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;span
+class=&quot;enforce&quot;&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">ENFORCE</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;/span&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">{% else %}</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;span
+class=&quot;complain&quot;&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">COMPLAIN</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;/span&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">{% endif %}</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;/td&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;/tr&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">{% endfor %}</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;/table&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;br&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;a
+href=&quot;/dashboard&quot;&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">Retour Dashboard</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;/a&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;/body&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;/html&gt;</p>
+</body>
+</html>
